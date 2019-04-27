@@ -1,7 +1,7 @@
 #ifndef _GRID_H_
 #define _GRID_H_
 
-/*#include "GameData.h"
+#include "GameData.h"
 //#include "Cell.h"
 #include <list>
 //#include "NPC.h"
@@ -16,18 +16,19 @@
 #include<future>
 //#include <conio.h>
 #include <ctime>
+#include "ImageGO2D.h"
 
 
-class Cell;
-class NPC;
-class Goal;
-class Object;
-class Path;
-class Random;
-class Timer;
-class CTime;
+//class Cell;
+//class NPC;
+//class Goal;
+//class Object;
+//class Path;
+//class Random;
+//class Timer;
+//class CTime;
 
-class Grid : public GameObject2D
+/*class Grid : public GameObject2D
 {
 public:
 	Grid(ID3D11Device* _pd3dDevice, GameData* _GD);
@@ -62,7 +63,7 @@ public:
 
 	void OpenList(Cell* _OpenList);
 
-	int Find(GameType _GT);
+	//int Find(GameType _GT);
 	int FindGridPos(Vector2 _Pos);
 	void FindParents(GameData* _GD);
 
@@ -114,7 +115,7 @@ private:
 
 	int m_NPCVecLoc; // used to calculate the movement cost for the path
 
-	Timer m_t;
+	//Timer m_t;
 
 	int m_runthough = 0;
 

@@ -92,26 +92,26 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	m_GameObjects.push_back(terrain);
 
 	//add some stuff to show off
+	*/
+	/*FileVBGO* terrainBox = new FileVBGO("../Assets/terrainTex.txt", _pd3dDevice);
+	m_GameObjects.push_back(terrainBox);*/
 
-	FileVBGO* terrainBox = new FileVBGO("../Assets/terrainTex.txt", _pd3dDevice);
-	m_GameObjects.push_back(terrainBox);
-
-	FileVBGO* Box = new FileVBGO("../Assets/cube.txt", _pd3dDevice);
+/*	FileVBGO* Box = new FileVBGO("../Assets/cube.txt", _pd3dDevice);
 	m_GameObjects.push_back(Box);
 	Box->SetPos(Vector3(0.0f, 0.0f, -100.0f));
 	Box->SetPitch(XM_PIDIV4);
-	Box->SetScale(20.0f);
-
+	Box->SetScale(20.0f);*/
+	
 	//L-system like tree
-	m_GameObjects.push_back(new Tree(4, 4, .6f, 10.0f *Vector3::Up, XM_PI/6.0f, "JEMINA vase -up.cmo", _pd3dDevice, m_fxFactory));
+	//m_GameObjects.push_back(new Tree(4, 4, .6f, 10.0f *Vector3::Up, XM_PI/6.0f, "JEMINA vase -up.cmo", _pd3dDevice, m_fxFactory));
 
 	VBCube* cube = new VBCube();
 	cube->init(11, _pd3dDevice);
-	cube->SetPos(Vector3(100.0f, 0.0f, 0.0f));
-	cube->SetScale(4.0f);
+	cube->SetPos(Vector3(0.0f, 0.0f, 0.0f));
+	cube->SetScale(1.0f);
 	m_GameObjects.push_back(cube);
 
-	VBSpike* spikes = new VBSpike();
+	/*VBSpike* spikes = new VBSpike();
 	spikes->init(11, _pd3dDevice);
 	spikes->SetPos(Vector3(0.0f, 0.0f, 100.0f));
 	spikes->SetScale(4.0f);

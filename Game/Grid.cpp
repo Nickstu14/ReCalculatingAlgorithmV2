@@ -8,49 +8,45 @@ Creates the NPC, Goal, Objects and Path classes, populate them with the images
 */
 /*Grid::Grid(ID3D11Device* _pd3dDevice, GameData* _GD) : GameObject2D()
 {
-	int m_VecLoc = 0; //location within the vector
-	for (int m_height = 0; m_height < _GD->m_scrHeight; m_height++)
-	{
-		for (int m_width = 0; m_width < _GD->m_scrWidth; m_width++)
-		{ //Creates all cells, populates all cells with objects and path images.
-			m_Cell.push_back(new Cell(Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc, GT_FREE, "Empty", _pd3dDevice));
-			m_Path.push_back(new Path("Path", _pd3dDevice, Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc));
-			m_Object.push_back(new Object("Object", _pd3dDevice, Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc));
-			m_VecLoc++;
-		}
-	}
+	//int m_VecLoc = 0; //location within the vector
+	//for (int m_height = 0; m_height < _GD->m_scrHeight; m_height++)
+	//{
+	//	for (int m_width = 0; m_width < _GD->m_scrWidth; m_width++)
+	//	{ //Creates all cells, populates all cells with objects and path images.
+	//		m_Cell.push_back(new Cell(Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc, GT_FREE, "Empty", _pd3dDevice));
+	//		m_Path.push_back(new Path("Path", _pd3dDevice, Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc));
+	//		m_Object.push_back(new Object("Object", _pd3dDevice, Vector2(m_width, m_height), Vector2(0.5f, 0.5f), m_VecLoc));
+	//		m_VecLoc++;
+	//	}
+	//}
 
 	//m_ExcCell is the extra Cell, only used when calculating parents, 
 	//when the parent adjacent is more than the width or height
-	m_ExCell = new Cell(Vector2(0, 0), Vector2(1, 1), m_Cell.size() + 1, GT_NULL, "Empty", _pd3dDevice);
+	//m_ExCell = new Cell(Vector2(0, 0), Vector2(1, 1), m_Cell.size() + 1, GT_NULL, "Empty", _pd3dDevice);
 
-	FindParents(_GD); //fills the list of parents in the vector
+	//FindParents(_GD); //fills the list of parents in the vector
 
-	Vector2 m_tempLoc = Check(_GD); //checks for an open slot within the grid
-	m_NPC = new NPC("NPC", _pd3dDevice, m_tempLoc, Vector2(0.5f, 0.5f)); // places NPC
-	SetLocation(m_tempLoc, GT_NPC);
+	//Vector2 m_tempLoc = Check(_GD); //checks for an open slot within the grid
+	//m_NPC = new NPC("NPC", _pd3dDevice, m_tempLoc, Vector2(0.5f, 0.5f)); // places NPC
+	//SetLocation(m_tempLoc, GT_NPC);
 
-	m_tempLoc = Check(_GD);
-	m_Goal = new Goal("Goal", _pd3dDevice, m_tempLoc, Vector2(0.5f, 0.5f)); // places goal
-	SetLocation(m_tempLoc, GT_GOAL);
+	//m_tempLoc = Check(_GD);
+	//m_Goal = new Goal("Goal", _pd3dDevice, m_tempLoc, Vector2(0.5f, 0.5f)); // places goal
+	//SetLocation(m_tempLoc, GT_GOAL);
 
-	SetUpObject(_GD);
+	//SetUpObject(_GD);
 
-	UpdatePos(); //Makes sure all objects are active to render
+	//UpdatePos(); //Makes sure all objects are active to render
 
-	m_DiagValue = 14;
-	m_MoveValue = 10;
-	m_EstMoveValue = 10;
-
-
-
-
+	//m_DiagValue = 14;
+	//m_MoveValue = 10;
+	//m_EstMoveValue = 10;
 }
 
 Grid::~Grid()
 {
-	Cleancost();
-	CleanVectors();
+	//Cleancost();
+	//CleanVectors();
 };
 
 /*auto Grid::PollInput()
