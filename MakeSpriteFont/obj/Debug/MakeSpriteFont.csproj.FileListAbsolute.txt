@@ -1,0 +1,5 @@
+I:\Programming\NewDirectXTK\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+I:\Programming\NewDirectXTK\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+I:\Programming\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+I:\Programming\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+I:\Programming\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb

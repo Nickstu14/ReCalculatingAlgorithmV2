@@ -1,0 +1,15 @@
+﻿  game.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+i:\programming\newdirectxtk\newdirectxtk\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+i:\programming\newdirectxtk\newdirectxtk\game\vbspiral.h(17): warning C4018: '<': signed/unsigned mismatch
+i:\programming\newdirectxtk\newdirectxtk\game\vbspiked.h(17): warning C4018: '<': signed/unsigned mismatch
+i:\programming\newdirectxtk\newdirectxtk\game\vbpillow.h(18): warning C4018: '<': signed/unsigned mismatch
+i:\programming\newdirectxtk\newdirectxtk\game\vbpillow.h(28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+i:\programming\newdirectxtk\newdirectxtk\game\terrain.h(13): warning C4100: '_GD': unreferenced formal parameter
+i:\programming\newdirectxtk\newdirectxtk\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+  App.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Generating Code...
+  Game.vcxproj -> I:\Programming\NewDirectXTK\NewDirectXTK\Debug\Game.exe
+  Game.vcxproj -> I:\Programming\NewDirectXTK\NewDirectXTK\Debug\Game.pdb (Full PDB)
