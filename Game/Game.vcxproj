@@ -354,6 +354,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="Cell.cpp" />
     <ClCompile Include="CMOGO.cpp" />
     <ClCompile Include="fileVBGO.cpp" />
     <ClCompile Include="game.cpp" />
@@ -377,6 +378,7 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="Cell.h" />
     <ClInclude Include="CMOGO.h" />
     <ClInclude Include="ConstantBuffer.h" />
     <ClInclude Include="drawdata.h" />

@@ -1,1 +1,32 @@
-﻿  DirectXTK_Desktop_2013.vcxproj -> C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\libs\Win32\Debug\DirectXTK.lib
+﻿  pch.cpp
+  WICTextureLoader.cpp
+  VertexTypes.cpp
+  SpriteFont.cpp
+  PrimitiveBatch.cpp
+  SpriteBatch.cpp
+  SkinnedEffect.cpp
+  SimpleMath.cpp
+  ScreenGrab.cpp
+  Mouse.cpp
+  ModelLoadVBO.cpp
+  ModelLoadSDKMESH.cpp
+  ModelLoadCMO.cpp
+  Model.cpp
+  Keyboard.cpp
+  GeometricPrimitive.cpp
+  GamePad.cpp
+  EnvironmentMapEffect.cpp
+  EffectFactory.cpp
+  EffectCommon.cpp
+  BinaryReader.cpp
+  Generating Code...
+  Compiling...
+  DualTextureEffect.cpp
+  DGSLEffectFactory.cpp
+  DGSLEffect.cpp
+  DDSTextureLoader.cpp
+  CommonStates.cpp
+  BasicEffect.cpp
+  AlphaTestEffect.cpp
+  Generating Code...
+  DirectXTK_Desktop_2013.vcxproj -> E:\GitHubRepo\ReCalculatingAlgorithmV2\libs\Win32\Debug\DirectXTK.lib

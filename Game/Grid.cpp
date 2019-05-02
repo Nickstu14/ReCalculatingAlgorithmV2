@@ -6,7 +6,7 @@
 Creates the grid and sets up the posistion, scale and Game Type.
 Creates the NPC, Goal, Objects and Path classes, populate them with the images
 */
-/*Grid::Grid(ID3D11Device* _pd3dDevice, GameData* _GD) : GameObject2D()
+Grid::Grid(ID3D11Device* _pd3dDevice, GameData* _GD) : GameObject2D()
 {
 	//int m_VecLoc = 0; //location within the vector
 	//for (int m_height = 0; m_height < _GD->m_scrHeight; m_height++)
@@ -49,7 +49,7 @@ Grid::~Grid()
 	//CleanVectors();
 };
 
-/*auto Grid::PollInput()
+auto Grid::PollInput()
 {
 return std::async(std::launch::async, [] {
 while (!m_exit)
@@ -60,7 +60,7 @@ input.store(_getch());
 }*/
 
 /*Sets the location of object*/
-/*void Grid::SetLocation(Vector2 _Pos, GameType _GT)
+void Grid::SetLocation(Vector2 _Pos, GameType _GT)
 {
 	for (auto it = m_Cell.begin(); it != m_Cell.end(); it++)
 	{
@@ -429,7 +429,7 @@ void Grid::FindParents(GameData * _GD)
 
 
 	}
-}
+}*/
 
 
 // checks the grid for an open slot **rebuild** can make more efficiant
@@ -476,11 +476,11 @@ int Grid::CheckMinValue(vector<int> _list)
 				if (m_Cell.at(_list.at(m_list))->getGameType() == GT_FREE)
 				{
 					//if movecost is less than previous then this cell is cheapest in parent list
-					/*if ((m_Cell.at(_list.at(m_list))->GetTotalMoveCost() >= m_value) && (m_list< _list.size()))
+					if ((m_Cell.at(_list.at(m_list))->GetTotalMoveCost() >= m_value) && (m_list< _list.size()))
 					{
-					m_list ++ ;
-					}*/
-/*					if (m_Cell.at(_list.at(m_list))->GetTotalMoveCost() <= m_value)
+						m_list ++ ;
+					}
+					if (m_Cell.at(_list.at(m_list))->GetTotalMoveCost() <= m_value)
 					{
 						m_value = m_Cell.at(_list.at(m_list))->GetTotalMoveCost();
 						m_cellValue = m_list;
@@ -508,7 +508,7 @@ void Grid::MoveCost(GameData * _GD, int _VectorLoc)
 	loc 7 = bot right
 	*/
 
-/*	int m_tempPos = _VectorLoc;
+	int m_tempPos = _VectorLoc;
 	vector<int>m_templist; //list of current parents
 
 	OpenList(m_Cell.at(m_tempPos)); //add the current vector pos to the open list
@@ -560,7 +560,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(0))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(0))->SetMoveCost(/*m_Cell.at(_list.at(0))->GetMoveCost() +*/ /*m_DiagValue + _CurrentCost);
+				m_Cell.at(_list.at(0))->SetMoveCost(/*m_Cell.at(_list.at(0))->GetMoveCost() +*/ m_DiagValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(0)));
 			}
 		}
@@ -571,7 +571,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(1))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(1))->SetMoveCost(/*m_Cell.at(_list.at(1))->GetMoveCost() +*/ /*m_MoveValue + _CurrentCost);
+				m_Cell.at(_list.at(1))->SetMoveCost(/*m_Cell.at(_list.at(1))->GetMoveCost() +*/ m_MoveValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(1)));
 			}
 		}
@@ -582,7 +582,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(2))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(2))->SetMoveCost(/*m_Cell.at(_list.at(2))->GetMoveCost() +*/ /*m_DiagValue + _CurrentCost);
+				m_Cell.at(_list.at(2))->SetMoveCost(/*m_Cell.at(_list.at(2))->GetMoveCost() +*/ m_DiagValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(2)));
 			}
 		}
@@ -593,7 +593,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(3))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(3))->SetMoveCost(/*m_Cell.at(_list.at(3))->GetMoveCost() +*/ /*m_MoveValue + _CurrentCost);
+				m_Cell.at(_list.at(3))->SetMoveCost(/*m_Cell.at(_list.at(3))->GetMoveCost() +*/ m_MoveValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(3)));
 			}
 		}
@@ -604,7 +604,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(4))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(4))->SetMoveCost(/*m_Cell.at(_list.at(4))->GetMoveCost() +*/ /*m_MoveValue + _CurrentCost);
+				m_Cell.at(_list.at(4))->SetMoveCost(/*m_Cell.at(_list.at(4))->GetMoveCost() +*/ m_MoveValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(4)));
 			}
 		}
@@ -616,7 +616,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(5))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(5))->SetMoveCost(/*m_Cell.at(_list.at(5))->GetMoveCost() +*/ /*m_DiagValue + _CurrentCost);
+				m_Cell.at(_list.at(5))->SetMoveCost(/*m_Cell.at(_list.at(5))->GetMoveCost() +*/ m_DiagValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(5)));
 			}
 		}
@@ -628,7 +628,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(6))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(6))->SetMoveCost(/*m_Cell.at(_list.at(6))->GetMoveCost() +*/ /*m_MoveValue + _CurrentCost);
+				m_Cell.at(_list.at(6))->SetMoveCost(/*m_Cell.at(_list.at(6))->GetMoveCost() +*/ m_MoveValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(6)));
 			}
 		}
@@ -640,7 +640,7 @@ void Grid::MoveCostCalculate(vector<int>  _list, int _CurrentCost)
 		{
 			if (m_Cell.at(_list.at(7))->GetMoveCost() == 0)
 			{
-				m_Cell.at(_list.at(7))->SetMoveCost(/*m_Cell.at(_list.at(7))->GetMoveCost() +*/ /*m_DiagValue + _CurrentCost);
+				m_Cell.at(_list.at(7))->SetMoveCost(/*m_Cell.at(_list.at(7))->GetMoveCost() +*/ m_DiagValue + _CurrentCost);
 				TotalMoveCost(m_Cell.at(_list.at(7)));
 			}
 		}

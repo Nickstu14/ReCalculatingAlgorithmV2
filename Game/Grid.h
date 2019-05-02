@@ -2,7 +2,7 @@
 #define _GRID_H_
 
 #include "GameData.h"
-//#include "Cell.h"
+#include "Cell.h"
 #include <list>
 //#include "NPC.h"
 //#include "Goal.h"
@@ -28,7 +28,7 @@
 //class Timer;
 //class CTime;
 
-/*class Grid : public GameObject2D
+class Grid : public GameObject2D
 {
 public:
 	Grid(ID3D11Device* _pd3dDevice, GameData* _GD);
@@ -100,14 +100,14 @@ private:
 
 	Cell* m_ExCell;
 
-	NPC * m_NPC;
-	Goal * m_Goal;
-	vector<Object *> m_Object;
-	vector<Path*> m_Path;
+	//NPC * m_NPC;
+	//Goal * m_Goal;
+	//vector<Object *> m_Object;
+	//vector<Path*> m_Path;
 
 
 
-	Random * random;
+	//Random * random;
 
 	int m_DiagValue;
 	int m_MoveValue;
@@ -122,5 +122,5 @@ private:
 	std::chrono::steady_clock::time_point m_TimeEnd;
 	std::chrono::duration<float> m_Totaltime;
 
-};*/
+};
 #endif

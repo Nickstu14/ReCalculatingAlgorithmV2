@@ -66,7 +66,7 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 
 	//create a base camera
 	m_cam = new Camera(0.25f * XM_PI, AR, 1.0f, 10000.0f, Vector3::UnitY, Vector3::Zero);
-	m_cam->SetPos(Vector3(0.0f, 100.0f, 100.0f));
+	m_cam->SetPos(Vector3(0.0f, 100.0f, 0.01f));
 	m_GameObjects.push_back(m_cam);
 
 	//create a base light
@@ -83,6 +83,9 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	//add a player
 	Player* pPlayer = new Player("BirdModelV1.cmo", _pd3dDevice, m_fxFactory);
 	m_GameObjects.push_back(pPlayer);
+
+
+
 
 	//add a secondary camera
 	m_TPScam = new TPSCamera(0.25f * XM_PI, AR, 1.0f, 10000.0f, pPlayer, Vector3::UnitY, Vector3(0.0f, 10.0f, 50.0f));
@@ -106,7 +109,7 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	//m_GameObjects.push_back(new Tree(4, 4, .6f, 10.0f *Vector3::Up, XM_PI/6.0f, "JEMINA vase -up.cmo", _pd3dDevice, m_fxFactory));
 
 	VBCube* cube = new VBCube();
-	cube->init(11, _pd3dDevice);
+	cube->init(20, _pd3dDevice);
 	cube->SetPos(Vector3(0.0f, 0.0f, 0.0f));
 	cube->SetScale(1.0f);
 	m_GameObjects.push_back(cube);
