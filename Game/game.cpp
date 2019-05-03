@@ -141,12 +141,22 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	logo->SetPos(200.0f * Vector2::One);
 	m_GameObject2Ds.push_back(logo); */
 
-	TextGO2D* text = new TextGO2D("");
+	/*TextGO2D* text = new TextGO2D("");
 	text->SetPos(Vector2(100, 10));
 	text->SetColour(Color((float*)&Colors::Yellow));
 	text->SetScale(0.5f);
 	//text->SetText(text->TextSetup(m_GD));
-	m_GameObject2Ds.push_back(text);
+	m_GameObject2Ds.push_back(text);*/
+
+	TextGO2D* m_Scrint = new TextGO2D("Width: " + std::to_string(m_GD->m_scrWidth) + " Height: " + std::to_string(m_GD->m_scrHeight));
+	m_Scrint->SetPos(Vector2(90, 10));
+	m_Scrint->SetColour(Color((float*)&Colors::Yellow));
+	m_Scrint->SetScale(0.5f);
+	m_GameObject2Ds.push_back(m_Scrint);
+
+	//creation of the base grid
+	m_Grid = new Grid(_pd3dDevice, m_GD);
+	m_GameObject2Ds.push_back(m_Grid);
 
 	m_GD->m_TGS = GS_BASICTEXT;
 	m_GD->m_GS = GS_NULL;
@@ -230,7 +240,7 @@ bool Game::Update()
 			break;
 	}*/
 
-	/*if ((m_keyboardState[DIK_F1] & 0x80) && !(m_prevKeyboardState[DIK_F1] & 0x80))
+	if ((m_keyboardState[DIK_F1] & 0x80) && !(m_prevKeyboardState[DIK_F1] & 0x80))
 	{
 		if (m_GD->m_TGS == GS_BASICTEXT)
 		{
@@ -240,7 +250,7 @@ bool Game::Update()
 		{
 			m_GD->m_TGS = GS_BASICTEXT;
 		}
-	}*/
+	}
 
 	//calculate frame time-step dt for passing down to game objects
 	DWORD currentTime = GetTickCount();

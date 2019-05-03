@@ -66,7 +66,7 @@ public:
 	//int Find(GameType _GT);
 	int FindGridPos(Vector2 _Pos);
 	void FindParents(GameData* _GD);
-
+	 
 	void MovePlayer(GameData* _GD);
 	void setNPCLoc(int _tempLoc) { m_NPCVecLoc = _tempLoc; }
 	int getNPCLoc() { return m_NPCVecLoc; }
@@ -87,7 +87,7 @@ public:
 
 	//auto PollInput();
 	std::atomic<char> input;
-	std::atomic<bool>m_exit;
+	std::atomic<bool> m_exit;
 
 
 	//char m_Input;

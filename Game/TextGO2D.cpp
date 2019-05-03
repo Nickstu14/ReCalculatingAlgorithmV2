@@ -4,14 +4,14 @@
 
 TextGO2D::TextGO2D(string _text)
 {
-	m_text = _text;
+	SetText(_text);
 }
 
 
 
 void TextGO2D::Tick(GameData* _GD)
 {
-	SetText(TextSetup(_GD));
+	//SetText(TextSetup(_GD));
 	GameObject2D::Tick(_GD);
 }
 
@@ -21,7 +21,7 @@ void TextGO2D::Draw(DrawData2D* _DD)
 	_DD->m_Font->DrawString(_DD->m_Sprites.get(), Helper::charToWChar(m_text.c_str()), m_pos, m_colour,m_rotation,m_origin,m_scale);
 }
 
-std::string TextGO2D::TextSetup(GameData* _GD)
+/*std::string TextGO2D::TextSetup(GameData* _GD)
 {
 	switch (_GD->m_TGS)
 	{
@@ -31,4 +31,4 @@ std::string TextGO2D::TextSetup(GameData* _GD)
 			break;
 	}
 
-}
+}*/

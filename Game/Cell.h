@@ -75,7 +75,7 @@ private:
 	vector <int> m_Parent; //dont know which one to use yet 
 	vector <Cell*> m_parents;  //so both will be implimented
 
-	Text * m_Text;
+	//Text * m_Text;
 	bool m_textToggle;
 
 

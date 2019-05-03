@@ -23,7 +23,7 @@ Cell::Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, string _fi
 	m_GT = _GT;
 
 	// set up locatin to display the values in each cell.
-	m_Text = new Text(std::to_string(0), Vector2((_Pos.x * 50) + 0.5f, (_Pos.y * 50) + 0.5f), _Scale / 2, Color(255, 69, 0));
+	//m_Text = new Text(std::to_string(0), Vector2((_Pos.x * 50) + 0.5f, (_Pos.y * 50) + 0.5f), _Scale / 2, Color(255, 69, 0));
 
 
 }
@@ -44,7 +44,7 @@ void Cell::Tick(GameData * _GD)
 		m_textToggle = false;
 	}
 	//updates the test to display the total movecost.
-	m_Text->setText(std::to_string(m_TotalMoveCost));
+	//m_Text->setText(std::to_string(m_TotalMoveCost));
 }
 
 void Cell::Draw(DrawData2D* _DD2D)
@@ -52,6 +52,6 @@ void Cell::Draw(DrawData2D* _DD2D)
 
 	ImageGO2D::Draw(_DD2D);
 
-	if (m_textToggle)
-		m_Text->Draw(_DD2D);
+	//if (m_textToggle)
+		//m_Text->Draw(_DD2D);
 }
