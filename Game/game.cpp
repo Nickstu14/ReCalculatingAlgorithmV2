@@ -160,7 +160,7 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 
 	//creation of the base grid
 	m_Grid = new Grid(_pd3dDevice, m_GD);
-	m_GameObject2Ds.push_back(m_Grid);
+	m_GameObjects.push_back(m_Grid);
 
 	m_GD->m_TGS = GS_BASICTEXT;
 	m_GD->m_GS = GS_NULL;

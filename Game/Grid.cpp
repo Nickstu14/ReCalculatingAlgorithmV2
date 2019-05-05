@@ -6,7 +6,7 @@
 Creates the grid and sets up the posistion, scale and Game Type.
 Creates the NPC, Goal, Objects and Path classes, populate them with the images
 */
-Grid::Grid(ID3D11Device* _pd3dDevice, GameData* _GD) : GameObject()
+Grid::Grid(ID3D11Device* _pd3dDevice, GameData* _GD) : public VBGO
 {
 	std::cout << _GD->m_scrHeight << " Screen height " << _GD->m_scrWidth << " Screen Width";
 	int m_VecLoc = 0;

@@ -29,7 +29,7 @@
 //class Timer;
 //class CTime;
 
-class Grid : public GameObject2D
+class Grid
 {
 public:
 	Grid(ID3D11Device* _pd3dDevice, GameData* _GD);

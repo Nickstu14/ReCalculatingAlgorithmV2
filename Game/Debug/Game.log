@@ -1,12 +1,107 @@
-﻿  game.cpp
+﻿  camera.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\camera.cpp(27): warning C4100: '_DD': unreferenced formal parameter
+  Cell.cpp
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-e:\githubrepo\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
-e:\githubrepo\recalculatingalgorithmv2\game\vbspiral.h(17): warning C4018: '<': signed/unsigned mismatch
-e:\githubrepo\recalculatingalgorithmv2\game\vbspiked.h(17): warning C4018: '<': signed/unsigned mismatch
-e:\githubrepo\recalculatingalgorithmv2\game\vbpillow.h(18): warning C4018: '<': signed/unsigned mismatch
-e:\githubrepo\recalculatingalgorithmv2\game\vbpillow.h(28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-e:\githubrepo\recalculatingalgorithmv2\game\terrain.h(13): warning C4100: '_GD': unreferenced formal parameter
-e:\githubrepo\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(56): error C2061: syntax error: identifier 'DrawData2D'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(86): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.cpp(10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.cpp(11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.cpp(31): error C2065: '_GD': undeclared identifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.cpp(49): error C2511: 'void Cell::Draw(DrawData *)': overloaded member function not found in 'Cell'
+  c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(16): note: see declaration of 'Cell'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.cpp(51): error C2227: left of '->Draw' must point to class/struct/union/generic type
+  CMOGO.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
-  Game.vcxproj -> E:\GitHubRepo\ReCalculatingAlgorithmV2\Debug\Game.exe
-  Game.vcxproj -> E:\GitHubRepo\ReCalculatingAlgorithmV2\Debug\Game.pdb (Full PDB)
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cmogo.cpp(34): warning C4189: 'hr': local variable is initialized but not referenced
+  fileVBGO.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\filevbgo.cpp(80): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\filevbgo.cpp(43): warning C4189: 'hr': local variable is initialized but not referenced
+  game.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbspiral.h(17): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbspiked.h(17): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbpillow.h(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbpillow.h(28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\terrain.h(13): warning C4100: '_GD': unreferenced formal parameter
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(86): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\game.cpp(163): error C2664: 'void std::list<GameObject *,std::allocator<_Ty>>::push_back(const _Ty &)': cannot convert argument 1 from 'Grid *' to 'GameObject *&&'
+          with
+          [
+              _Ty=GameObject *
+          ]
+  c:\users\nick\documents\git\recalculatingalgorithmv2\game\game.cpp(163): note: Reason: cannot convert from 'Grid *' to 'GameObject *'
+  c:\users\nick\documents\git\recalculatingalgorithmv2\game\game.cpp(163): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  gameobject.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\gameobject.cpp(21): warning C4100: '_GD': unreferenced formal parameter
+  App.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  GameObject2D.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\gameobject2d.cpp(16): warning C4100: '_GD': unreferenced formal parameter
+  Grid.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(56): error C2061: syntax error: identifier 'DrawData2D'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\cell.h(86): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.h(39): error C2061: syntax error: identifier 'DrawData2D'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(17): error C2661: 'Cell::Cell': no overloaded function takes 4 arguments
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(35): error C2065: 'DrawData2D': undeclared identifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(35): error C2065: '_DD2D': undeclared identifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(35): error C2761: 'void Grid::Draw(void)': member function redeclaration not allowed
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\grid.cpp(36): error C2448: 'Grid::Draw': function-style initializer appears to be a function definition
+  ImageGO2D.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\imagego2d.cpp(24): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\imagego2d.cpp(16): warning C4189: 'hr': local variable is initialized but not referenced
+  light.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  main.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\main.cpp(44): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(240): note: see declaration of 'freopen'
+  TextGO2D.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
+  VBSnail.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(34): warning C4244: '=': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(95): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(97): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(98): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(99): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbsnail.cpp(140): warning C4189: 'hr': local variable is initialized but not referenced
+  terrain.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\terrain.h(13): warning C4100: '_GD': unreferenced formal parameter
+  TPSCamera.cpp
+  treebit.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Tree.cpp
+  Player.cpp
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  VBCube.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbcube.cpp(16): warning C4244: '=': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbcube.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbcube.cpp(125): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbcube.cpp(126): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbcube.cpp(127): warning C4244: 'initializing': conversion from 'int' to 'WORD', possible loss of data
+  Generating Code...
+  Compiling...
+  VBGO.cpp
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer': structure was padded due to alignment specifier
+c:\users\nick\documents\git\recalculatingalgorithmv2\game\vbgo.cpp(199): warning C4316: 'ConstantBuffer': object allocated on the heap may not be aligned 16
+  Generating Code...
