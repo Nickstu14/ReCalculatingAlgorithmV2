@@ -64,6 +64,10 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	UINT height = rc.bottom - rc.top;
 	float AR = (float)width / (float)height;
 
+	//Add window size into Gamedata
+	m_GD->m_scrWidth = (width - 200) / 50;
+	m_GD->m_scrHeight = (height - 200)/ 50;
+
 	//create a base camera
 	m_cam = new Camera(0.25f * XM_PI, AR, 1.0f, 10000.0f, Vector3::UnitY, Vector3::Zero);
 	m_cam->SetPos(Vector3(0.0f, 100.0f, 0.01f));
@@ -148,11 +152,11 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance) :m_playT
 	//text->SetText(text->TextSetup(m_GD));
 	m_GameObject2Ds.push_back(text);*/
 
-	TextGO2D* m_Scrint = new TextGO2D("Width: " + std::to_string(m_GD->m_scrWidth) + " Height: " + std::to_string(m_GD->m_scrHeight));
+	/*TextGO2D* m_Scrint = new TextGO2D("Width: " + std::to_string(m_GD->m_scrWidth) + " Height: " + std::to_string(m_GD->m_scrHeight));
 	m_Scrint->SetPos(Vector2(90, 10));
 	m_Scrint->SetColour(Color((float*)&Colors::Yellow));
 	m_Scrint->SetScale(0.5f);
-	m_GameObject2Ds.push_back(m_Scrint);
+	m_GameObject2Ds.push_back(m_Scrint);*/
 
 	//creation of the base grid
 	m_Grid = new Grid(_pd3dDevice, m_GD);

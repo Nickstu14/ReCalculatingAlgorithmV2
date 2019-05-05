@@ -1,6 +1,6 @@
 #include "Cell.h"
 
-Cell::Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, string _fileName, ID3D11Device* _GD) : ImageGO2D(_fileName, _GD)
+Cell::Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, ID3D11Device* _pd3dDevice, string _fileName, IEffectFactory* _EF) : CMOGO(_fileName,_pd3dDevice,_EF)
 {
 	m_NPC = false;
 	m_goal = false;
@@ -17,14 +17,21 @@ Cell::Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, string _fi
 
 	m_GridLoc = _Pos;
 
-	m_pos = Vector2((_Pos.x * 50) + 0.5f, (_Pos.y * 50) + 0.5f);
-	m_scale = _Scale;
+	//m_pos = Vector2((_Pos.x * 50) + 0.5f, (_Pos.y * 50) + 0.5f);
+	//m_scale = _Scale;
 
 	m_GT = _GT;
 
 	// set up locatin to display the values in each cell.
 	//m_Text = new Text(std::to_string(0), Vector2((_Pos.x * 50) + 0.5f, (_Pos.y * 50) + 0.5f), _Scale / 2, Color(255, 69, 0));
 
+	std::cout << ".";
+
+	m_Cube = new VBCube();
+	m_Cube->init(20, _GD);
+	m_Cube->SetPos(Vector3(0.0f, 0.0f, 0.0f));
+	m_Cube->SetScale(1.0f);
+	
 
 }
 
@@ -35,23 +42,11 @@ Cell::~Cell()
 
 void Cell::Tick(GameData * _GD)
 {
-	if (_GD->m_TextToggle)
-	{
-		m_textToggle = true;
-	}
-	else
-	{
-		m_textToggle = false;
-	}
-	//updates the test to display the total movecost.
-	//m_Text->setText(std::to_string(m_TotalMoveCost));
+	
 }
 
-void Cell::Draw(DrawData2D* _DD2D)
+void Cell::Draw(DrawData* _DD)
 {
 
-	ImageGO2D::Draw(_DD2D);
-
-	//if (m_textToggle)
-		//m_Text->Draw(_DD2D);
+		m_Cube->Draw(_DD);
 }

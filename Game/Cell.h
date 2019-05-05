@@ -1,18 +1,22 @@
 #ifndef _CELL_H_
 #define _CELL_H_
 
-#include "ImageGO2D.h"
+#include "CMOGO.h"
 #include "GameData.h"
+
 //#include "GameType.h"
 //#include "Text.h"
 #include <vector>
+#include <iostream>
+#include "VBCube.h"
+
 
 class Text;
 
-class Cell : public ImageGO2D
+class Cell : public CMOGO
 {
 public:
-	Cell(Vector2 _Pos, Vector2 _Scale,/*int _PosX, int _PosY,*/ int _VecLoc, GameState _GT, string _fileName, ID3D11Device* _GD);
+	Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, ID3D11Device* _pd3dDevice, string _fileName, IEffectFactory* _EF);
 	~Cell();
 
 	int GetCellX() { return m_GridLocX; }
@@ -74,6 +78,9 @@ private:
 
 	vector <int> m_Parent; //dont know which one to use yet 
 	vector <Cell*> m_parents;  //so both will be implimented
+	Cell* m_Path; //this will store the next cell in the path
+
+	VBCube* m_Cube
 
 	//Text * m_Text;
 	bool m_textToggle;

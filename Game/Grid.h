@@ -4,6 +4,7 @@
 #include "GameData.h"
 #include "Cell.h"
 #include <list>
+#include "CMOGO.h"
 //#include "NPC.h"
 //#include "Goal.h"
 //#include "Object.h"
@@ -16,7 +17,7 @@
 #include<future>
 //#include <conio.h>
 #include <ctime>
-#include "ImageGO2D.h"
+#include <iostream>
 
 
 //class Cell;
