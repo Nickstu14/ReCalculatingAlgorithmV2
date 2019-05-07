@@ -8,3 +8,8 @@ E:\GitHubRepo\ReCalculatingAlgorithmV2\MakeSpriteFont\bin\Debug\MakeSpriteFont.p
 E:\GitHubRepo\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
 E:\GitHubRepo\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
 E:\GitHubRepo\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
+C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+C:\Users\Nick\Documents\Git\ReCalculatingAlgorithmV2\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb

@@ -1,7 +1,6 @@
 #ifndef _CELL_H_
 #define _CELL_H_
 
-#include "CMOGO.h"
 #include "GameData.h"
 
 //#include "GameType.h"
@@ -12,16 +11,17 @@
 
 
 class Text;
+class Gameobject;
 
-class Cell : public CMOGO
+class Cell : public GameObject
 {
 public:
-	Cell(Vector2 _Pos, Vector2 _Scale, int _VecLoc, GameState  _GT, ID3D11Device* _pd3dDevice, string _fileName, IEffectFactory* _EF);
+	Cell(Vector3 _Pos, Vector3 _Scale, ID3D11Device* _pd3Device);
 	~Cell();
 
 	int GetCellX() { return m_GridLocX; }
 	int GetCellY() { return m_GridLocY; }
-	Vector2 GetCellPos() { return m_GridLoc; }
+	Vector3 GetCellPos() { return m_GridLoc; }
 	int GetVecLoc() { return m_VecLoc; }
 
 	void setNPCLoc() { m_NPC = true; }
@@ -53,7 +53,7 @@ public:
 	int getParentSize() { return m_Parent.size(); }
 
 	virtual void Tick(GameData * _GD);
-	virtual void Draw(DrawData2D *_DD2D);
+	virtual void Draw(DrawData *_DD);
 
 
 
@@ -72,7 +72,7 @@ private:
 					//Location within the grid
 	int m_GridLocX;
 	int m_GridLocY;
-	Vector2 m_GridLoc;
+	Vector3 m_GridLoc;
 
 	int m_VecLoc; //location within the vector
 
@@ -80,7 +80,7 @@ private:
 	vector <Cell*> m_parents;  //so both will be implimented
 	Cell* m_Path; //this will store the next cell in the path
 
-	VBCube* m_Cube
+	GameObject* m_GO;
 
 	//Text * m_Text;
 	bool m_textToggle;
